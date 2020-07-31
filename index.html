@@ -20,9 +20,9 @@
 
   <link rel="shortcut icon" type="image/jpg" href="favicon.jpg"/>
 
-  <link href="styles/css/app.css" rel="stylesheet"></link>
-
   <!-- styles -->
+  <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
+  <link href="styles/css/app.css" rel="stylesheet"></link>
 </head>
 <body>
   <nav>
@@ -38,14 +38,44 @@
     </span>
   </nav>
 
-  <!-- content -->
+  <section class="carousel">
 
-  <!-- footer -->
+    <div class="carousel-btn-container">
+      <a href="#" class="carousel-btn carousel-prev">PREV</a>
+    </div>
 
-  <!-- modals -->
+    <!-- selected projects -->
+    <ul class="carousel-projects" data-flickity>
+      <li class="carousel-cell">
+        <img src="storage/images/portfolio/layered/flower-shop.png" alt="flowershop" />
+        <h3>flowershop</h3>
+      </li>
+
+      <li class="carousel-cell">
+        <!-- <img src="storage/images/portfolio/construct-ph.png" alt="flowershop" /> -->
+        <h3>2</h3>
+      </li>
+
+      <li class="carousel-cell">
+        <!-- <img src="//picsum.photos/400/500?3" alt="" /> -->
+        <h3>3</h3>
+      </li>
+
+      <li class="carousel-cell">
+        <!-- <img src="//picsum.photos/400/500?4" alt="" /> -->
+        <h3>4</h3>
+      </li>
+    </ul>
+
+    <div class="carousel-btn-container">
+      <a href="# "class="carousel-btn carousel-next">NEXT</a>
+    </div>
+  </section>
 
   <!-- scripts -->
+  <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
   <script src="scripts/app.js"></script>
   <script src="scripts/nav-veggie.js"></script>
+  <script src="scripts/flickity.js"></script>
 </body>
 </html>
