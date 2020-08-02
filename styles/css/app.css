@@ -37,6 +37,8 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 nav {
+  position: relative;
+  z-index: 20;
   display: flex;
   margin: 0 2rem;
   height: 5rem;
@@ -64,11 +66,14 @@ nav {
     height: 17vh;
   }
 }
-nav h2 {
+nav a {
   display: flex;
   align-items: center;
   flex-grow: 1;
   font-size: 1rem;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 800;
+  text-transform: uppercase;
 }
 
 .nav-btn-container {
@@ -111,6 +116,16 @@ nav h2 {
 }
 .nav-btn.toggled .strokes .stroke:last-child {
   transform: rotate(-45deg) translateZ(0);
+}
+
+.nav-menu {
+  z-index: 10;
+  position: absolute;
+  height: 0;
+  width: 100%;
+  top: 0;
+  left: 0;
+  background-color: #101010;
 }
 
 .carousel .carousel-btn-container {
