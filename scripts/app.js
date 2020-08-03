@@ -5,13 +5,13 @@ var navMenu = document.getElementById('nav_menu');
 function navMenuOpen() {
     navBtn.setAttribute("onclick", "navMenuClose()");
 
-    navMenu.style.height = '100vh';
+    navMenu.style.opacity = 1;
     document.getElementsByTagName('BODY')[0].style.overflow = 'hidden';
 }
 
 function navMenuClose() {
     navBtn.setAttribute('onclick', 'navMenuOpen()');
 
-    navMenu.style.height = 0;
+    navMenu.style.opacity = 0;
     document.getElementsByTagName('BODY')[0].style.overflow = 'visible';
 }
