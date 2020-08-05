@@ -10,6 +10,9 @@ function navMenuOpen() {
 
     // remove the overflow of body
     document.getElementsByTagName('BODY')[0].style.overflow = 'hidden';
+
+    // show the nav-menu
+    navMenu.style.opacity = 1;
 }
 
 function navMenuClose() {
@@ -17,4 +20,7 @@ function navMenuClose() {
 
     // return the overflow of body
     document.getElementsByTagName('BODY')[0].style.overflow = 'visible';
+
+    // hide the nav-menu
+    navMenu.style.opacity = 0;
 }
