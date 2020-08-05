@@ -12,6 +12,7 @@ function navMenuOpen() {
     document.getElementsByTagName('BODY')[0].style.overflow = 'hidden';
 
     // show the nav-menu
+    navMenu.style.zIndex = 10;
     navMenu.style.opacity = 1;
 
     // transition-effect of page links
@@ -47,6 +48,7 @@ function navMenuClose() {
     document.getElementsByTagName('BODY')[0].style.overflow = 'visible';
 
     // hide the nav-menu
+    navMenu.style.zIndex = 0;
     navMenu.style.opacity = 0;
 
     // remove the transition class of nav-menu page links 
