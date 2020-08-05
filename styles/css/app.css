@@ -21,11 +21,11 @@
   }
 }
 
-.nav-menu-footer .nav-menu-social-links a, .nav-menu-info a {
+.nav-menu-footer .nav-menu-social-links a, .nav-menu-info-wrapper a {
   text-decoration: none;
   color: #ffffff;
 }
-.nav-menu-footer .nav-menu-social-links a:hover, .nav-menu-info a:hover {
+.nav-menu-footer .nav-menu-social-links a:hover, .nav-menu-info-wrapper a:hover {
   color: #101010;
   transition: 0.3s;
 }
@@ -141,7 +141,7 @@ nav a {
   background-color: #101010;
   overflow: hidden;
   opacity: 0;
-  transition: opacity 0.3s ease-in-out;
+  transition: opacity 0.5s ease-in-out;
 }
 
 .nav-menu-container {
@@ -152,8 +152,20 @@ nav a {
 }
 
 .nav-menu-page-links {
+  display: flex;
+  flex-direction: column;
   text-align: right;
+  overflow: hidden;
   margin-bottom: 2.5rem;
+}
+
+.nav-menu-page-link.slide-in-one {
+  animation-name: slide-left;
+  animation-duration: 0.6s;
+}
+.nav-menu-page-link.slide-in-two {
+  animation-name: slide-left;
+  animation-duration: 0.8s;
 }
 
 .nav-menu-page-link a {
@@ -166,11 +178,25 @@ nav a {
 }
 
 .nav-menu-info {
-  font-family: "Blinker", sans-serif;
+  width: 100%;
 }
-.nav-menu-info a {
+
+.nav-menu-info-wrapper {
+  font-family: "Blinker", sans-serif;
+  display: inline-block;
+  overflow: hidden;
+}
+.nav-menu-info-wrapper a {
   display: block;
   line-height: 1.5rem;
+}
+.nav-menu-info-wrapper a.slide-in-one {
+  animation-name: slide-right;
+  animation-duration: 0.6s;
+}
+.nav-menu-info-wrapper a.slide-in-two {
+  animation-name: slide-right;
+  animation-duration: 0.8s;
 }
 
 .nav-menu-footer {
@@ -179,6 +205,7 @@ nav a {
   bottom: 2rem;
   left: 0;
   right: 0;
+  overflow: hidden;
 }
 .nav-menu-footer .nav-menu-social-links {
   flex: 1;
@@ -189,6 +216,10 @@ nav a {
 .nav-menu-footer .nav-menu-social-links a svg {
   fill: #ffffff;
 }
+.nav-menu-footer .nav-menu-social-links a svg.transition-in {
+  animation-name: slide-up;
+  animation-duration: 0.6s;
+}
 .nav-menu-footer span {
   text-transform: uppercase;
   font-family: "Blinker", sans-serif;
@@ -196,6 +227,11 @@ nav a {
   font-weight: 700;
   letter-spacing: 2px;
   color: #8c8c8c;
+  text-align: right;
+}
+.nav-menu-footer span.transition-in {
+  animation-name: slide-up;
+  animation-duration: 0.6s;
 }
 
 .carousel-btn-container {
@@ -262,6 +298,31 @@ nav a {
   align-items: center;
   text-transform: uppercase;
   font-size: 35px;
+}
+
+@keyframes slide-left {
+  from {
+    transform: translateX(55%);
+  }
+  to {
+    transform: translateX(0);
+  }
+}
+@keyframes slide-right {
+  from {
+    transform: translateX(-55%);
+  }
+  to {
+    transform: translateX(0);
+  }
+}
+@keyframes slide-up {
+  from {
+    transform: translateY(100%);
+  }
+  to {
+    transform: translateY(0);
+  }
 }
 
 /*# sourceMappingURL=app.css.map */
