@@ -13,6 +13,15 @@ function navMenuOpen() {
 
     // show the nav-menu
     navMenu.style.opacity = 1;
+
+    // transition-effect of page links
+    for(var i=0; i< navMenuPageLinks.length; i++){
+        if (i % 2 == 0) {
+            navMenuPageLinks[i].classList.add('slide-in-one');
+        } else {
+            navMenuPageLinks[i].classList.add('slide-in-two');
+        }
+    }
 }
 
 function navMenuClose() {
@@ -23,4 +32,13 @@ function navMenuClose() {
 
     // hide the nav-menu
     navMenu.style.opacity = 0;
+
+    // remove the transition class of nav-menu page links 
+    for(var i=0; i< navMenuPageLinks.length; i++){
+        if (i % 2 == 0) {
+            navMenuPageLinks[i].classList.remove('slide-in-one');
+        } else {
+            navMenuPageLinks[i].classList.remove('slide-in-two');
+        }
+    }
 }
