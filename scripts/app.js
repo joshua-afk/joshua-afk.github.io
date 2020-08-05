@@ -5,13 +5,15 @@ var navMenu = document.getElementById('nav_menu');
 function navMenuOpen() {
     navBtn.setAttribute("onclick", "navMenuClose()");
 
-    navMenu.style.opacity = 1;
+    // remove the overflow of body
     document.getElementsByTagName('BODY')[0].style.overflow = 'hidden';
+
 }
 
 function navMenuClose() {
     navBtn.setAttribute('onclick', 'navMenuOpen()');
 
-    navMenu.style.opacity = 0;
+    // return the overflow of body
     document.getElementsByTagName('BODY')[0].style.overflow = 'visible';
+
 }
