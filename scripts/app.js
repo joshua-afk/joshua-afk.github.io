@@ -31,6 +31,13 @@ function navMenuOpen() {
             navMenuInfo[i].classList.add('slide-in-two');
         }
     }
+
+    // transition-effect of social links
+    for(var i=0; i< navMenuSocialLinks.length; i++){
+        navMenuSocialLinks[i].classList.add('transition-in');
+    }
+
+    document.querySelector('.nav-menu-footer span').classList.add('transition-in');
 }
 
 function navMenuClose() {
@@ -59,4 +66,11 @@ function navMenuClose() {
             navMenuInfo[i].classList.remove('slide-in-two');
         }
     }
+
+    // remove the transition class of nav-menu social links
+    for(var i=0; i< navMenuSocialLinks.length; i++){
+        navMenuSocialLinks[i].classList.remove('transition-in');
+    }
+
+    document.querySelector('.nav-menu-footer span').classList.remove('transition-in');
 }
