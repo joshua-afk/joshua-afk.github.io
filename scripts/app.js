@@ -22,6 +22,15 @@ function navMenuOpen() {
             navMenuPageLinks[i].classList.add('slide-in-two');
         }
     }
+
+    // transition-effect of info
+    for(var i=0; i< navMenuInfo.length; i++){
+        if (i % 2 == 0) {
+            navMenuInfo[i].classList.add('slide-in-one');
+        } else {
+            navMenuInfo[i].classList.add('slide-in-two');
+        }
+    }
 }
 
 function navMenuClose() {
@@ -39,6 +48,15 @@ function navMenuClose() {
             navMenuPageLinks[i].classList.remove('slide-in-one');
         } else {
             navMenuPageLinks[i].classList.remove('slide-in-two');
+        }
+    }
+
+    // remove the transition class of nav-menu info
+    for(var i=0; i< navMenuInfo.length; i++){
+        if (i % 2 == 0) {
+            navMenuInfo[i].classList.remove('slide-in-one');
+        } else {
+            navMenuInfo[i].classList.remove('slide-in-two');
         }
     }
 }
