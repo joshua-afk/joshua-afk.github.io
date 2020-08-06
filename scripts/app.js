@@ -48,7 +48,7 @@ function navMenuClose() {
     document.getElementsByTagName('BODY')[0].style.overflow = 'visible';
 
     // hide the nav-menu
-    navMenu.style.zIndex = 0;
+    navMenu.style.zIndex = -1;
     navMenu.style.opacity = 0;
 
     // remove the transition class of nav-menu page links 
