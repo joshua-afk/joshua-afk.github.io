@@ -21,15 +21,21 @@
   }
 }
 
-.nav-menu-footer .nav-menu-social-links a, .nav-menu-info-wrapper a {
+.nav-menu-footer .nav-menu-social-links a, .nav-menu-info-wrapper a, a {
   text-decoration: none;
   color: #ffffff;
 }
-.nav-menu-footer .nav-menu-social-links a:hover, .nav-menu-info-wrapper a:hover {
+.nav-menu-footer .nav-menu-social-links a:hover, a:hover {
   color: #101010;
-  transition: 0.3s;
+  transition: 0.25s ease-in-out;
 }
 
+@supports (-webkit-text-stroke: 1px #8c8c8c) {
+  .uses-hero-header span {
+    -webkit-text-stroke: 1px #8c8c8c;
+    -webkit-text-fill-color: #101010;
+  }
+}
 /* ==MONTSERRAT== */
 * {
   margin: 0;
@@ -54,10 +60,6 @@ body {
 
 ul {
   list-style: none;
-}
-
-a:hover {
-  transition: 0.25s ease-in-out;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -171,7 +173,7 @@ nav a {
 .nav-menu-page-link a {
   text-decoration: none;
   font-family: "Montserrat", sans-serif;
-  font-size: 2.25rem;
+  font-size: 2.25em;
   font-weight: 800;
   text-transform: uppercase;
   color: #ffffff;
@@ -328,6 +330,47 @@ nav a {
   to {
     transform: translateY(0);
   }
+}
+.uses-hero {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 20vh;
+}
+
+.uses-hero-header {
+  font-size: 2.25em;
+  text-align: center;
+  line-height: 1.3;
+  margin-bottom: 2rem;
+}
+.uses-hero-header span {
+  display: block;
+}
+
+.uses-question-marks-container {
+  text-align: center;
+  margin-bottom: 6rem;
+}
+
+.uses-arrow-container {
+  text-align: center;
+}
+
+.uses-arrow-container {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 80vh;
+}
+
+.uses-arrow {
+  font-size: 58px;
+}
+.uses-arrow svg {
+  fill: #101010;
+  stroke: #8c8c8c;
+  stroke-width: 1px;
 }
 
 /*# sourceMappingURL=app.css.map */
