@@ -14,6 +14,7 @@ function navMenuOpen() {
     // show the nav-menu
     navMenu.style.zIndex = 10;
     navMenu.style.opacity = 1;
+    navMenu.style.height = '100vh';
 
     // transition-effect of page links
     for(var i=0; i< navMenuPageLinks.length; i++){
@@ -50,6 +51,7 @@ function navMenuClose() {
     // hide the nav-menu
     navMenu.style.zIndex = -1;
     navMenu.style.opacity = 0;
+    navMenu.style.height = 0;
 
     // remove the transition class of nav-menu page links 
     for(var i=0; i< navMenuPageLinks.length; i++){
