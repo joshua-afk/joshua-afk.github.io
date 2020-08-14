@@ -31,7 +31,7 @@
 }
 
 @supports (-webkit-text-stroke: 1px #8c8c8c) {
-  .uses-hero-header span {
+  .about-hero-date, .about-hero-header-container span, .uses-hero-header span {
     -webkit-text-stroke: 1px #8c8c8c;
     -webkit-text-fill-color: #101010;
   }
@@ -136,7 +136,7 @@ nav a {
 .nav-menu {
   z-index: 0;
   position: absolute;
-  height: 100vh;
+  height: 0;
   width: 100%;
   top: 0;
   left: 0;
@@ -371,6 +371,58 @@ nav a {
   fill: #101010;
   stroke: #8c8c8c;
   stroke-width: 1px;
+}
+
+.about-hero {
+  position: absolute;
+  right: 1.5rem;
+  top: 20vh;
+}
+
+.about-hero-circle {
+  height: 18rem;
+  width: 18rem;
+  border: 1px solid #8c8c8c;
+  border-radius: 50%;
+  display: flex;
+}
+
+.about-hero-header-wrapper {
+  position: relative;
+  top: 9vh;
+  left: -2.5rem;
+}
+
+.about-hero-header-container {
+  background-color: #101010;
+  font-family: "Montserrat", sans-serif;
+}
+.about-hero-header-container h2 {
+  font-size: 2.25em;
+  margin-bottom: 0.5rem;
+}
+.about-hero-header-container p {
+  font-size: 1.25em;
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+}
+.about-hero-header-container span {
+  font-size: 1.25em;
+  font-weight: 700;
+}
+
+.about-hero-date-container {
+  position: absolute;
+  bottom: 10%;
+  left: 81%;
+  width: 100%;
+}
+
+.about-hero-date {
+  background-color: #101010;
+  font-family: "Montserrat", sans-serif;
+  font-size: 1.5em;
+  font-weight: 700;
 }
 
 /*# sourceMappingURL=app.css.map */
