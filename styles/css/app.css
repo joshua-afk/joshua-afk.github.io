@@ -173,7 +173,7 @@ nav a {
 .nav-menu-page-link a {
   text-decoration: none;
   font-family: "Montserrat", sans-serif;
-  font-size: 2.25em;
+  font-size: 2.25rem;
   font-weight: 800;
   text-transform: uppercase;
   color: #ffffff;
@@ -280,7 +280,7 @@ nav a {
     height: 445px;
   }
 }
-@media (min-width: 414px) and (max-width: 768px) {
+@media (min-width: 375px) and (max-width: 768px) {
   .carousel-cell {
     width: 100%;
     height: 580px;
@@ -331,6 +331,23 @@ nav a {
     transform: translateY(0);
   }
 }
+.arrow-container {
+  text-align: center;
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 80vh;
+}
+
+.arrow {
+  font-size: 58px;
+}
+.arrow svg {
+  fill: #101010;
+  stroke: #8c8c8c;
+  stroke-width: 1px;
+}
+
 .uses-hero {
   position: absolute;
   left: 0;
@@ -339,7 +356,7 @@ nav a {
 }
 
 .uses-hero-header {
-  font-size: 2.25em;
+  font-size: 2.25rem;
   text-align: center;
   line-height: 1.3;
   margin-bottom: 2rem;
@@ -353,30 +370,18 @@ nav a {
   margin-bottom: 6rem;
 }
 
-.uses-arrow-container {
-  text-align: center;
-}
-
-.uses-arrow-container {
-  position: absolute;
-  left: 0;
-  right: 0;
-  top: 80vh;
-}
-
-.uses-arrow {
-  font-size: 58px;
-}
-.uses-arrow svg {
-  fill: #101010;
-  stroke: #8c8c8c;
-  stroke-width: 1px;
-}
-
 .about-hero {
   position: absolute;
-  right: 1.5rem;
   top: 20vh;
+  left: 0;
+  right: 0;
+  display: flex;
+  justify-content: center;
+}
+
+.about-hero-container {
+  position: absolute;
+  right: 1.5rem;
 }
 
 .about-hero-circle {
@@ -390,24 +395,26 @@ nav a {
 .about-hero-header-wrapper {
   position: relative;
   top: 9vh;
-  left: -2.5rem;
+  left: -1.8rem;
 }
 
 .about-hero-header-container {
   background-color: #101010;
   font-family: "Montserrat", sans-serif;
+  border-top: 0.8rem solid #101010;
+  border-bottom: 0.8rem solid #101010;
 }
 .about-hero-header-container h2 {
-  font-size: 2.25em;
-  margin-bottom: 0.5rem;
+  font-size: 2.25rem;
+  margin-bottom: 0.6rem;
 }
 .about-hero-header-container p {
-  font-size: 1.25em;
+  font-size: 1.25rem;
   font-weight: 700;
-  margin-bottom: 0.5rem;
+  margin-bottom: 0.6rem;
 }
 .about-hero-header-container span {
-  font-size: 1.25em;
+  font-size: 1.25rem;
   font-weight: 700;
 }
 
@@ -415,13 +422,12 @@ nav a {
   position: absolute;
   bottom: 10%;
   left: 81%;
-  width: 100%;
 }
 
 .about-hero-date {
   background-color: #101010;
   font-family: "Montserrat", sans-serif;
-  font-size: 1.5em;
+  font-size: 1.5rem;
   font-weight: 700;
 }
 
