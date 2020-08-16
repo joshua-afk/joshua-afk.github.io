@@ -58,6 +58,10 @@ body {
   background-color: #101010;
 }
 
+section {
+  display: block;
+}
+
 ul {
   list-style: none;
 }
@@ -331,7 +335,15 @@ nav a {
     transform: translateY(0);
   }
 }
-.arrow-container {
+.hero {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 100vh;
+}
+
+.hero-arrow-container {
   text-align: center;
   position: absolute;
   left: 0;
@@ -339,16 +351,16 @@ nav a {
   top: 80vh;
 }
 
-.arrow {
+.hero-arrow {
   font-size: 58px;
 }
-.arrow svg {
+.hero-arrow svg {
   fill: #101010;
   stroke: #8c8c8c;
   stroke-width: 1px;
 }
 
-.uses-hero {
+.uses-hero-container {
   position: absolute;
   left: 0;
   right: 0;
@@ -370,18 +382,18 @@ nav a {
   margin-bottom: 6rem;
 }
 
-.about-hero {
+.about-hero-wrapper {
+  position: absolute;
+  right: 1.5rem;
+}
+
+.about-hero-container {
   position: absolute;
   top: 20vh;
   left: 0;
   right: 0;
   display: flex;
   justify-content: center;
-}
-
-.about-hero-container {
-  position: absolute;
-  right: 1.5rem;
 }
 
 .about-hero-circle {
