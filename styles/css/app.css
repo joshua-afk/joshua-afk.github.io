@@ -336,11 +336,7 @@ nav a {
   }
 }
 .hero {
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  height: 100vh;
+  height: calc(100vh - 5rem);
 }
 
 .hero-arrow-container {
@@ -358,6 +354,15 @@ nav a {
   fill: #101010;
   stroke: #8c8c8c;
   stroke-width: 1px;
+}
+
+.section-header {
+  font-size: 1.5rem;
+}
+
+.section-text {
+  font-size: 0.812rem;
+  line-height: 1.7;
 }
 
 .uses-hero-container {
@@ -382,6 +387,7 @@ nav a {
   margin-bottom: 6rem;
 }
 
+/*==ABOUT-HERO==*/
 .about-hero-wrapper {
   position: absolute;
   right: 1.5rem;
@@ -442,5 +448,7 @@ nav a {
   font-size: 1.5rem;
   font-weight: 700;
 }
+
+/*==ABOUT-WHO==*/
 
 /*# sourceMappingURL=app.css.map */
