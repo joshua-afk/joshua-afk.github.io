@@ -361,10 +361,12 @@ nav a {
 }
 
 .section-header {
+  margin-bottom: 2rem;
   font-size: 1.5rem;
 }
 
 .section-text {
+  margin-bottom: 1rem;
   font-size: 0.812rem;
   line-height: 1.7;
 }
@@ -452,5 +454,7 @@ nav a {
   font-size: 1.5rem;
   font-weight: 700;
 }
+
+/*==ABOUT-HERO==*/
 
 /*# sourceMappingURL=app.css.map */
