@@ -356,6 +356,10 @@ nav a {
   stroke-width: 1px;
 }
 
+.section-wrapper {
+  padding: 3rem 0;
+}
+
 .section-header {
   font-size: 1.5rem;
 }
@@ -448,7 +452,5 @@ nav a {
   font-size: 1.5rem;
   font-weight: 700;
 }
-
-/*==ABOUT-WHO==*/
 
 /*# sourceMappingURL=app.css.map */
