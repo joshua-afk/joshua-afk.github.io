@@ -366,9 +366,14 @@ nav a {
 }
 
 .section-text {
-  margin-bottom: 1rem;
+  margin: 0 2rem;
   font-size: 0.812rem;
   line-height: 1.7;
+}
+@media (min-width: 361px) and (max-width: 414px) {
+  .section-text {
+    margin: 0 2rem;
+  }
 }
 
 .uses-hero-container {
@@ -456,5 +461,16 @@ nav a {
 }
 
 /*==ABOUT-HERO==*/
+.about-who {
+  text-align: center;
+}
+
+.sep-1 {
+  height: 1rem;
+}
+
+.sep-2 {
+  height: 2rem;
+}
 
 /*# sourceMappingURL=app.css.map */
