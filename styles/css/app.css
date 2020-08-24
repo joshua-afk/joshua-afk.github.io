@@ -177,7 +177,7 @@ nav a {
 .nav-menu-page-link a {
   text-decoration: none;
   font-family: "Montserrat", sans-serif;
-  font-size: 2.25rem;
+  font-size: calc(25px + 4vw);
   font-weight: 800;
   text-transform: uppercase;
   color: #ffffff;
@@ -278,13 +278,13 @@ nav a {
   height: 425px;
   position: relative;
 }
-@media (min-width: 361px) and (max-width: 375px) {
+@media (min-width: 361px) and (max-width: 414px) {
   .carousel-cell {
     width: 375px;
     height: 445px;
   }
 }
-@media (min-width: 375px) and (max-width: 768px) {
+@media (min-width: 414px) and (max-width: 1280px) {
   .carousel-cell {
     width: 100%;
     height: 580px;
@@ -362,12 +362,12 @@ nav a {
 
 .section-header {
   margin-bottom: 2rem;
-  font-size: 1.5rem;
+  font-size: calc(19px + 2vw);
 }
 
 .section-text {
   margin: 0 2rem;
-  font-size: 0.812rem;
+  font-size: calc(9px + 1vw);
   line-height: 1.7;
 }
 @media (min-width: 361px) and (max-width: 414px) {
@@ -384,7 +384,7 @@ nav a {
 }
 
 .uses-hero-header {
-  font-size: 2.25rem;
+  font-size: calc(25px + 4vw);
   text-align: center;
   line-height: 1.3;
   margin-bottom: 2rem;
@@ -434,16 +434,16 @@ nav a {
   border-bottom: 0.8rem solid #101010;
 }
 .about-hero-header-container h2 {
-  font-size: 2.25rem;
+  font-size: calc(25px + 4vw);
   margin-bottom: 0.6rem;
 }
 .about-hero-header-container p {
-  font-size: 1.25rem;
+  font-size: calc(13px + 2vw);
   font-weight: 700;
   margin-bottom: 0.6rem;
 }
 .about-hero-header-container span {
-  font-size: 1.25rem;
+  font-size: calc(13px + 2vw);
   font-weight: 700;
 }
 
@@ -456,7 +456,7 @@ nav a {
 .about-hero-date {
   background-color: #101010;
   font-family: "Montserrat", sans-serif;
-  font-size: 1.5rem;
+  font-size: calc(19px + 2vw);
   font-weight: 700;
 }
 
