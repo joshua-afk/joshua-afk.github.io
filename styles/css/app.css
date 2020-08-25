@@ -472,6 +472,16 @@ nav a {
   line-height: 1.3;
   margin: 10% 0 4rem;
 }
+@media (min-width: 361px) and (max-width: 414px) {
+  .works-hero-header {
+    font-size: calc(25px + 4vw);
+  }
+}
+@media (min-width: 405px) and (max-width: 490px) {
+  .works-hero-header {
+    font-size: 35px;
+  }
+}
 
 .project-details {
   width: 30%;
