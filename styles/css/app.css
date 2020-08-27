@@ -182,6 +182,11 @@ nav a {
   text-transform: uppercase;
   color: #ffffff;
 }
+.nav-menu-page-link a.--contact {
+  text-decoration: line-through;
+  text-decoration-color: #f65252;
+  text-decoration-thickness: 5px;
+}
 
 .nav-menu-info {
   width: 100%;
