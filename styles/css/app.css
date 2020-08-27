@@ -526,7 +526,7 @@ nav a {
 .project-description {
   font-family: "Blinker", sans-serif;
   font-size: calc(12px + 1vw);
-  color: #CBD5E0;
+  color: #8c8c8c;
   line-height: 1.5;
   letter-spacing: 1.5px;
 }
@@ -614,11 +614,17 @@ nav a {
 
 .project-link {
   text-decoration: none;
-  color: white;
+  color: #ffffff;
   margin-right: 1rem;
   font-size: 0.8rem;
   letter-spacing: 3px;
   font-weight: 700;
+}
+.project-link.disabled {
+  text-decoration: line-through;
+  text-decoration-color: #f65252;
+  text-decoration-thickness: 2px;
+  cursor: text;
 }
 
 .project-sm-right-variant .project-link {
