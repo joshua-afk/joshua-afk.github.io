@@ -47,6 +47,13 @@
   color: #ffffff;
 }
 
+html {
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+  overflow-y: scroll;
+  overflow-x: hidden;
+}
+
 body {
   font-family: "Blinker", sans-serif;
   color: #ffffff;
