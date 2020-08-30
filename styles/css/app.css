@@ -248,6 +248,31 @@ nav a {
   animation-duration: 0.6s;
 }
 
+#scrollbar-wrapper {
+  position: fixed;
+  top: 0;
+  z-index: 50;
+  right: 0;
+  width: 6px;
+  left: auto;
+  bottom: 0;
+  background-color: #ffffff;
+}
+
+.scrollbar {
+  position: absolute;
+  display: block;
+  height: 100%;
+  background-color: #101010;
+  right: 0;
+  width: 6px;
+  left: auto;
+  bottom: 0;
+  -webkit-transform: translateY(-100vh);
+  -ms-transform: translateY(-100vh);
+  transform: translateY(-100vh);
+}
+
 @keyframes slide-left {
   from {
     transform: translateX(55%);
@@ -313,6 +338,57 @@ nav a {
   }
 }
 
+.d-none {
+  display: none;
+}
+
+.d-flex {
+  display: flex;
+}
+
+.d-block {
+  display: block;
+}
+
+@media (min-width: 360px) and (max-width: 414px) {
+  .d-sm-none {
+    display: none;
+  }
+
+  .d-sm-flex {
+    display: flex;
+  }
+
+  .d-sm-block {
+    display: block;
+  }
+}
+@media (min-width: 768px) and (max-width: 1280px) {
+  .d-sm-none {
+    display: none;
+  }
+
+  .d-sm-flex {
+    display: flex;
+  }
+
+  .d-sm-block {
+    display: block;
+  }
+}
+@media (min-width: 1280px) and (max-width: 1920px) {
+  .d-lg-none {
+    display: none;
+  }
+
+  .d-lg-flex {
+    display: flex;
+  }
+
+  .d-lg-block {
+    display: block;
+  }
+}
 .carousel {
   position: relative;
   z-index: 1;
