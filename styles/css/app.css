@@ -430,7 +430,7 @@ nav a {
 .carousel-prev {
   margin-left: 0rem;
 }
-@media (min-width: 768px) and (max-width: 1280px) {
+@media (min-width: 768px) and (max-width: 1920px) {
   .carousel-prev {
     margin-left: 2rem;
   }
@@ -439,7 +439,7 @@ nav a {
 .carousel-next {
   margin-right: 0rem;
 }
-@media (min-width: 768px) and (max-width: 1280px) {
+@media (min-width: 768px) and (max-width: 1920px) {
   .carousel-next {
     margin-right: 2rem;
   }
@@ -470,19 +470,19 @@ nav a {
   display: flex;
   justify-content: center;
   width: 100%;
-  height: 425px;
+  height: 68vh;
   position: relative;
 }
 @media (min-width: 361px) and (max-width: 414px) {
   .carousel-cell {
     width: 375px;
-    height: 445px;
+    height: 68vh;
   }
 }
-@media (min-width: 414px) and (max-width: 1280px) {
+@media (min-width: 415px) and (max-width: 1280px) {
   .carousel-cell {
     width: 100%;
-    height: 580px;
+    height: 75vh;
   }
 }
 @media (min-width: 1280px) and (max-width: 1920px) {
