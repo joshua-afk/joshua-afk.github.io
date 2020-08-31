@@ -511,7 +511,7 @@ nav a {
   text-align: center;
   align-items: center;
   text-transform: uppercase;
-  font-size: 35px;
+  font-size: calc(20px + 2.1vw);
 }
 @media (min-width: 360px) and (max-width: 768px) {
   .carousel-cell h3 {
