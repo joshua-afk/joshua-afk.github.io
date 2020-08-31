@@ -395,12 +395,18 @@ nav a {
   }
 }
 .carousel {
+  height: calc(100vh - 5rem);
   position: relative;
   z-index: 1;
 }
 @media (min-width: 1280px) and (max-width: 1920px) {
   .carousel {
     display: flex;
+  }
+}
+@media (min-width: 769px) and (max-width: 1920px) {
+  .carousel {
+    height: calc(83vh);
   }
 }
 
