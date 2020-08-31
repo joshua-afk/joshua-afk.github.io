@@ -188,7 +188,12 @@ nav a {
 .nav-menu-page-link a.--contact {
   text-decoration: line-through;
   text-decoration-color: #f65252;
-  text-decoration-thickness: 5px;
+  text-decoration-thickness: 0.5rem;
+}
+@media (min-width: 1280px) and (max-width: 1920px) {
+  .nav-menu-page-link a.--contact {
+    text-decoration-thickness: 1rem;
+  }
 }
 
 .nav-menu-info {
