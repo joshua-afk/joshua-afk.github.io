@@ -414,6 +414,11 @@ nav a {
   justify-content: center;
   display: flex;
 }
+@media (min-width: 769px) and (max-width: 1920px) {
+  .carousel-btn-container {
+    margin-top: -17vh;
+  }
+}
 @media (min-width: 1280px) and (max-width: 1920px) {
   .carousel-btn-container {
     justify-content: center;
