@@ -3,18 +3,18 @@
 .container, .nav-menu-footer, .nav-menu-container, nav {
   margin: 0 2rem;
 }
-@media (min-width: 361px) and (max-width: 414px) {
+@media (min-width: 360px) and (max-width: 414px) {
   .container, .nav-menu-footer, .nav-menu-container, nav {
     margin: 0 2rem;
   }
 }
-@media (min-width: 769px) and (max-width: 1280px) {
+@media (min-width: 768px) and (max-width: 1280px) {
   .container, .nav-menu-footer, .nav-menu-container, nav {
     margin: 0 5rem;
     max-width: 1280px;
   }
 }
-@media (min-width: 1367px) and (max-width: 1920px) {
+@media (min-width: 1366px) and (max-width: 1920px) {
   .container, .nav-menu-footer, .nav-menu-container, nav {
     margin: 0 8rem;
     max-width: 1920px;
@@ -159,6 +159,12 @@ nav a {
   display: flex;
   flex-direction: column;
 }
+@media (min-width: 1280px) {
+  .nav-menu-container {
+    flex-direction: row;
+    margin: 0 10rem;
+  }
+}
 
 .nav-menu-page-links {
   display: flex;
@@ -166,6 +172,13 @@ nav a {
   text-align: right;
   overflow: hidden;
   margin-bottom: 2.5rem;
+}
+@media (min-width: 1280px) {
+  .nav-menu-page-links {
+    order: 2;
+    margin-bottom: 0;
+    line-height: 1;
+  }
 }
 
 .nav-menu-page-link.slide-in-one {
@@ -199,6 +212,14 @@ nav a {
 .nav-menu-info {
   width: 100%;
 }
+@media (min-width: 1280px) {
+  .nav-menu-info {
+    display: flex;
+    align-items: end;
+    order: 1;
+    flex: 1;
+  }
+}
 
 .nav-menu-info-wrapper {
   font-family: "Blinker", sans-serif;
@@ -208,6 +229,13 @@ nav a {
 .nav-menu-info-wrapper a {
   display: block;
   line-height: 1.5rem;
+}
+@media (min-width: 1280px) {
+  .nav-menu-info-wrapper a {
+    line-height: 1.5;
+    font-size: 22px;
+    font-weight: 600;
+  }
 }
 .nav-menu-info-wrapper a.slide-in-one {
   animation-name: slide-right;
@@ -221,16 +249,22 @@ nav a {
 .nav-menu-footer {
   display: flex;
   position: absolute;
-  bottom: 2rem;
+  bottom: 2.5rem;
   left: 0;
   right: 0;
   overflow: hidden;
+}
+@media (min-width: 768px) {
+  .nav-menu-footer {
+    bottom: 8.5vh;
+    margin: 0 3.5rem;
+  }
 }
 .nav-menu-footer .nav-menu-social-links {
   flex: 1;
 }
 .nav-menu-footer .nav-menu-social-links a {
-  margin-right: 0.5rem;
+  margin-right: 1rem;
 }
 .nav-menu-footer .nav-menu-social-links a svg {
   fill: #ffffff;
@@ -448,7 +482,7 @@ nav a {
 }
 @media (min-width: 768px) and (max-width: 1920px) {
   .carousel-prev {
-    margin-left: 2rem;
+    margin-left: 3.5rem;
   }
 }
 
@@ -457,7 +491,7 @@ nav a {
 }
 @media (min-width: 768px) and (max-width: 1920px) {
   .carousel-next {
-    margin-right: 2rem;
+    margin-right: 3.5rem;
   }
 }
 
