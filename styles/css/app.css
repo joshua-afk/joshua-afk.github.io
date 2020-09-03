@@ -23,6 +23,7 @@
 
 .nav-menu-footer .nav-menu-social-links a, .nav-menu-info-wrapper a, a {
   text-decoration: none;
+  outline: none;
   color: #ffffff;
 }
 .nav-menu-footer .nav-menu-social-links a:hover, a:hover {
@@ -67,6 +68,10 @@ section {
 
 ul {
   list-style: none;
+}
+
+a:active {
+  outline: none;
 }
 
 h1, h2, h3, h4, h5, h6 {
