@@ -667,6 +667,13 @@ nav {
   position: absolute;
   right: 1.5rem;
 }
+@media (min-width: 414px) {
+  .about-hero-wrapper {
+    position: relative;
+    display: flex;
+    right: -1rem;
+  }
+}
 
 .about-hero-container {
   position: absolute;
@@ -678,8 +685,8 @@ nav {
 }
 
 .about-hero-circle {
-  height: 18rem;
-  width: 18rem;
+  height: calc(17rem + 4vw);
+  width: calc(17rem + 4vw);
   border: 1px solid #8c8c8c;
   border-radius: 50%;
   display: flex;
@@ -688,7 +695,12 @@ nav {
 .about-hero-header-wrapper {
   position: relative;
   top: 9vh;
-  left: -1.8rem;
+  left: -1.5rem;
+}
+@media (min-width: 375px) {
+  .about-hero-header-wrapper {
+    left: -2.3rem;
+  }
 }
 
 .about-hero-header-container {
@@ -696,10 +708,16 @@ nav {
   font-family: "Montserrat", sans-serif;
   border-top: 0.8rem solid #101010;
   border-bottom: 0.8rem solid #101010;
+  border-top-right-radius: 18%;
 }
 .about-hero-header-container h2 {
-  font-size: calc(25px + 4vw);
+  font-size: calc(22px + 4vw);
   margin-bottom: 0.6rem;
+}
+@media (min-width: 414px) {
+  .about-hero-header-container h2 {
+    font-size: calc(21px + 4vw);
+  }
 }
 .about-hero-header-container p {
   font-size: calc(13px + 2vw);
