@@ -685,11 +685,23 @@ nav {
 }
 
 .about-hero-circle {
-  height: calc(17rem + 4vw);
-  width: calc(17rem + 4vw);
+  height: calc(16rem + 10vw);
+  width: calc(16rem + 10vw);
   border: 1px solid #8c8c8c;
   border-radius: 50%;
   display: flex;
+}
+@media (min-width: 414px) {
+  .about-hero-circle {
+    height: calc(16rem + 17vw);
+    width: calc(16rem + 17vw);
+  }
+}
+@media (min-width: 768px) {
+  .about-hero-circle {
+    height: calc(16rem + 20vw);
+    width: calc(16rem + 20vw);
+  }
 }
 
 .about-hero-header-wrapper {
@@ -700,6 +712,12 @@ nav {
 @media (min-width: 375px) {
   .about-hero-header-wrapper {
     left: -2.3rem;
+  }
+}
+@media (min-width: 768px) {
+  .about-hero-header-wrapper {
+    left: -4.5rem;
+    top: 10vh;
   }
 }
 
