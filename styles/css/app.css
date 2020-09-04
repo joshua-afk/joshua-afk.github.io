@@ -37,6 +37,53 @@
     -webkit-text-fill-color: #101010;
   }
 }
+.nav-menu-page-link a {
+  position: relative;
+  color: transparent;
+}
+.nav-menu-page-link a:before {
+  content: attr(data-text);
+  pointer-events: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  transform: translateX(0);
+  transition: 0.5s;
+  color: #ffffff;
+}
+.nav-menu-page-link a:hover:before {
+  transform: translateX(100%);
+  opacity: 0;
+}
+.nav-menu-page-link a:after {
+  content: attr(data-text);
+  pointer-events: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  transform: translateX(-100%);
+  transition: 0.5s;
+  opacity: 0;
+}
+@supports (-webkit-text-stroke: 1px #8c8c8c) {
+  .nav-menu-page-link a:after {
+    -webkit-text-stroke: 1px #8c8c8c;
+    -webkit-text-fill-color: transparent;
+  }
+}
+.nav-menu-page-link a:hover:after {
+  transform: translateX(0);
+  opacity: 1;
+}
+
 /* ==MONTSERRAT== */
 * {
   margin: 0;
@@ -202,56 +249,11 @@ nav {
 }
 
 .nav-menu-page-link a {
-  position: relative;
   text-decoration: none;
   text-transform: uppercase;
   font-family: "Montserrat", sans-serif;
   font-size: calc(25px + 4vw);
   font-weight: 800;
-  color: #ffffff;
-  color: transparent;
-}
-.nav-menu-page-link a:before {
-  content: attr(data-text);
-  pointer-events: none;
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  display: flex;
-  align-items: center;
-  transform: translateX(0);
-  transition: 0.5s;
-  color: #ffffff;
-}
-.nav-menu-page-link a:hover:before {
-  transform: translateX(100%);
-  opacity: 0;
-}
-.nav-menu-page-link a:after {
-  content: attr(data-text);
-  pointer-events: none;
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  display: flex;
-  align-items: center;
-  transform: translateX(-100%);
-  transition: 0.5s;
-  opacity: 0;
-}
-@supports (-webkit-text-stroke: 1px #8c8c8c) {
-  .nav-menu-page-link a:after {
-    -webkit-text-stroke: 1px #8c8c8c;
-    -webkit-text-fill-color: transparent;
-  }
-}
-.nav-menu-page-link a:hover:after {
-  transform: translateX(0);
-  opacity: 1;
 }
 .nav-menu-page-link a.--contact {
   text-decoration: line-through;
