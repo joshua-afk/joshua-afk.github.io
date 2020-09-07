@@ -8,8 +8,8 @@ var navMenuSocialLinks = document.querySelectorAll('.nav-menu-social-links a svg
 function navMenuOpen() {
     navBtn.setAttribute("onclick", "navMenuClose()");
 
-    // remove the overflow of body
-    document.getElementsByTagName('BODY')[0].style.overflow = 'hidden';
+    // remove the overflow of HTML
+    document.getElementsByTagName('HTML')[0].style.overflow = 'hidden';
 
     // show the nav-menu
     navMenu.style.zIndex = 10;
@@ -45,8 +45,8 @@ function navMenuOpen() {
 function navMenuClose() {
     navBtn.setAttribute('onclick', 'navMenuOpen()');
 
-    // return the overflow of body
-    document.getElementsByTagName('BODY')[0].style.overflow = 'visible';
+    // return the overflow of html
+    document.getElementsByTagName('HTML')[0].style.overflow = 'visible';
 
     // hide the nav-menu
     navMenu.style.zIndex = -1;
