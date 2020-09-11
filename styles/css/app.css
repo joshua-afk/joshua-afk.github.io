@@ -326,7 +326,7 @@ nav {
 @media (min-width: 1280px) {
   .nav-menu-info {
     display: flex;
-    align-items: end;
+    align-items: flex-end;
     order: 1;
     flex: 1;
   }
