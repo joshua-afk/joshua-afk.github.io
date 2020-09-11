@@ -868,28 +868,6 @@ nav {
   font-weight: 700;
 }
 
-/*==ABOUT-HERO==*/
-#about-who .section-header {
-  text-align: center;
-}
-@media (min-width: 1280px) {
-  #about-who .section-header {
-    text-align: left;
-    margin: 0 8rem 2rem;
-    max-width: 1920px;
-  }
-}
-#about-who .section-text {
-  text-align: center;
-}
-@media (min-width: 1280px) {
-  #about-who .section-text {
-    text-align: left;
-    margin: 0 8rem;
-    max-width: 1920px;
-  }
-}
-
 .works-hero-header {
   position: relative;
   font-size: calc(25px + 4vw);
@@ -1058,6 +1036,27 @@ nav {
 
 .sep-2 {
   height: 2rem;
+}
+
+#about-who .section-header, .uses-section .section-header {
+  text-align: center;
+}
+@media (min-width: 1280px) {
+  #about-who .section-header, .uses-section .section-header {
+    text-align: left;
+    margin: 0 8rem 2rem;
+    max-width: 1920px;
+  }
+}
+#about-who .section-text, .uses-section .section-text {
+  text-align: center;
+}
+@media (min-width: 1280px) {
+  #about-who .section-text, .uses-section .section-text {
+    text-align: left;
+    margin: 0 8rem;
+    max-width: 1920px;
+  }
 }
 
 /*# sourceMappingURL=app.css.map */
