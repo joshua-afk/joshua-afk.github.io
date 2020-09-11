@@ -773,6 +773,7 @@ nav {
     display: flex;
     flex: 1;
     flex-flow: row-reverse;
+    align-items: center;
   }
 }
 @media (min-width: 1280px) {
