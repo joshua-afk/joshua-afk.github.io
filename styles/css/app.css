@@ -21,13 +21,13 @@
   }
 }
 
-.nav-menu-footer .nav-menu-social-links a, a {
+.uses-section a, .nav-menu-footer .nav-menu-social-links a, a {
   text-decoration: none;
   outline: none;
   color: #ffffff;
 }
 .nav-menu-footer .nav-menu-social-links a:hover, a:hover {
-  color: #101010;
+  color: #cccccc;
   transition: 0.25s ease-in-out;
 }
 
@@ -575,10 +575,6 @@ nav {
     display: block;
   }
 }
-.decorated {
-  text-decoration: underline;
-}
-
 .carousel {
   height: calc(100vh - 5rem);
   position: relative;
@@ -725,6 +721,10 @@ nav {
     right: 0;
     bottom: 4rem;
   }
+}
+
+.uses-section a {
+  border-bottom: 1px solid #f65252;
 }
 
 .uses-hero-container {
