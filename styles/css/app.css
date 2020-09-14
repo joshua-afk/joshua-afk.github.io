@@ -723,6 +723,26 @@ nav {
   }
 }
 
+.uses-section .section-header {
+  text-align: center;
+}
+@media (min-width: 1280px) {
+  .uses-section .section-header {
+    text-align: left;
+    margin: 0 8rem 2rem;
+    max-width: 1920px;
+  }
+}
+.uses-section .section-text {
+  text-align: left;
+}
+@media (min-width: 1280px) {
+  .uses-section .section-text {
+    text-align: left;
+    margin: 0 8rem;
+    max-width: 1920px;
+  }
+}
 .uses-section a {
   border-bottom: 1px solid #f65252;
 }
@@ -1101,21 +1121,21 @@ nav {
   height: 2rem;
 }
 
-#about-who .section-header, .uses-section .section-header {
+#about-who .section-header {
   text-align: center;
 }
 @media (min-width: 1280px) {
-  #about-who .section-header, .uses-section .section-header {
+  #about-who .section-header {
     text-align: left;
     margin: 0 8rem 2rem;
     max-width: 1920px;
   }
 }
-#about-who .section-text, .uses-section .section-text {
+#about-who .section-text {
   text-align: center;
 }
 @media (min-width: 1280px) {
-  #about-who .section-text, .uses-section .section-text {
+  #about-who .section-text {
     text-align: left;
     margin: 0 8rem;
     max-width: 1920px;
