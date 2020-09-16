@@ -956,7 +956,7 @@ nav {
   font-size: calc(25px + 4vw);
   text-align: center;
   line-height: 1.3;
-  margin: 10% 0 4rem;
+  margin: 8% 0 4rem;
 }
 @media (min-width: 361px) and (max-width: 414px) {
   .works-hero-header {
@@ -967,6 +967,21 @@ nav {
   .works-hero-header {
     font-size: 35px;
   }
+}
+
+.project-wrapper {
+  width: 100%;
+  display: flex;
+}
+
+.project-container {
+  flex: 1;
+}
+.project-container.left {
+  border-right: 1px solid #8c8c8c;
+}
+.project-container.right {
+  border-left: 1px solid #8c8c8c;
 }
 
 .project-details {
@@ -986,14 +1001,70 @@ nav {
   letter-spacing: 3px;
 }
 
+.project-letter {
+  margin-bottom: 1rem;
+  font-weight: 700;
+  font-size: calc(20px + 2.1vw);
+  letter-spacing: 1px;
+}
+
+.project-left-variant {
+  position: relative;
+  padding-right: 2rem;
+  margin-bottom: 4rem;
+}
+@media (min-width: 1280px) {
+  .project-left-variant header {
+    position: absolute;
+    z-index: 1;
+    top: 40%;
+    text-align: right;
+    right: -1.5rem;
+  }
+}
+.project-left-variant .overlay {
+  background-color: #101010;
+  width: 100%;
+  height: 5.5rem;
+  position: absolute;
+  right: -1.5rem;
+  top: 35%;
+}
 .project-left-variant .project-number {
   padding-left: 0.8rem;
   border-left: 4px solid #f65252;
 }
 
+.project-right-variant {
+  position: relative;
+  padding-left: 2rem;
+  margin-bottom: 4rem;
+}
+@media (min-width: 1280px) {
+  .project-right-variant header {
+    position: absolute;
+    z-index: 1;
+    top: 40%;
+    text-align: left;
+    left: -1.5rem;
+  }
+}
+.project-right-variant .overlay {
+  background-color: #101010;
+  width: 100%;
+  height: 5.5rem;
+  position: absolute;
+  left: -1.5rem;
+  top: 35%;
+}
 .project-right-variant .project-number {
   padding-right: 0.8rem;
   border-right: 4px solid #f65252;
+}
+
+.project-right-variant .project-number,
+.project-right-variant .project-title,
+.project-right-variant .project-description {
   text-align: right;
 }
 
@@ -1002,6 +1073,19 @@ nav {
   font-weight: 700;
   font-size: calc(20px + 2.1vw);
   letter-spacing: 1px;
+}
+@media (min-width: 1280px) {
+  .project-title {
+    font-size: 35px;
+    font-weight: 700;
+  }
+}
+
+.project-year {
+  color: #8c8c8c;
+  font-size: 1rem;
+  font-weight: 600;
+  padding-bottom: 0.5rem;
 }
 
 .project-description {
@@ -1060,27 +1144,7 @@ nav {
   filter: grayscale(0%) sepia(0%);
 }
 
-.project-sm-left-variant, .project-sm-right-variant {
-  margin-bottom: 4rem;
-}
-
-.project-sm-left-variant .project-number {
-  padding-left: 0.8rem;
-  border-left: 4px solid #f65252;
-}
-
-.project-sm-right-variant .project-number {
-  padding-right: 0.8rem;
-  border-right: 4px solid #f65252;
-}
-
-.project-sm-right-variant .project-number,
-.project-sm-right-variant .project-title,
-.project-sm-right-variant .project-description {
-  text-align: right;
-}
-
-.project-sm .project-image-container {
+.project .project-image-container {
   width: 100%;
   margin-bottom: 1rem;
 }
@@ -1089,7 +1153,7 @@ nav {
   display: flex;
 }
 
-.project-sm-right-variant .project-links-container {
+.project-right-variant .project-links-container {
   flex-direction: row-reverse;
 }
 
@@ -1108,7 +1172,7 @@ nav {
   cursor: text;
 }
 
-.project-sm-right-variant .project-link {
+.project-right-variant .project-link {
   margin-right: 0;
   margin-left: 1.3rem;
 }
