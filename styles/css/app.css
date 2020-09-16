@@ -302,23 +302,6 @@ nav {
   font-size: calc(25px + 4vw);
   font-weight: 800;
 }
-.nav-menu-page-link a.--contact {
-  text-decoration: line-through;
-  text-decoration-color: #f65252;
-  text-decoration-thickness: 0.5rem;
-  color: #ffffff;
-}
-.nav-menu-page-link a.--contact:before {
-  content: "";
-}
-.nav-menu-page-link a.--contact:after {
-  content: "";
-}
-@media (min-width: 1280px) and (max-width: 1920px) {
-  .nav-menu-page-link a.--contact {
-    text-decoration-thickness: 1rem;
-  }
-}
 
 .nav-menu-info {
   width: 100%;
