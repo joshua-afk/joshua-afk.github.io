@@ -3,7 +3,8 @@ var utils = window.fizzyUIUtils;
 var carousel = document.querySelector('.carousel-projects');
 var flkty = new Flickity( carousel, {
   prevNextButtons: false,
-  pageDots: false
+  pageDots: false,
+  wrapAround: true
 });
 
 // previous
