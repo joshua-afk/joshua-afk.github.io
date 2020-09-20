@@ -12,9 +12,8 @@ function navMenuOpen() {
     document.getElementsByTagName('HTML')[0].style.overflow = 'hidden';
 
     // show the nav-menu
-    navMenu.style.zIndex = 10;
-    navMenu.style.opacity = 1;
-    navMenu.style.height = '100vh';
+    navMenu.classList.add('show');
+    navMenu.classList.remove('hide');
 
     // transition-effect of page links
     for(var i=0; i< navMenuPageLinks.length; i++){
@@ -49,9 +48,8 @@ function navMenuClose() {
     document.getElementsByTagName('HTML')[0].style.overflow = 'visible';
 
     // hide the nav-menu
-    navMenu.style.zIndex = -1;
-    navMenu.style.opacity = 0;
-    navMenu.style.height = 0;
+    navMenu.classList.add('hide');
+    navMenu.classList.remove('show');
 
     // remove the transition class of nav-menu page links 
     for(var i=0; i< navMenuPageLinks.length; i++){
