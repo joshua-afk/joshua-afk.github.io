@@ -243,16 +243,24 @@ nav {
 }
 
 .nav-menu {
-  z-index: 0;
   position: absolute;
-  height: 0;
   width: 100%;
   top: 0;
   left: 0;
   background-color: #101010;
   overflow: hidden;
-  opacity: 0;
   transition: opacity 0.5s ease-in-out;
+}
+.nav-menu.show {
+  z-index: 10;
+  height: 100vh;
+  opacity: 1;
+}
+.nav-menu.hide {
+  z-index: -1;
+  height: 0;
+  opacity: 0;
+  transition: opacity 0.5s ease-in-out, height 3s ease-in, z-index 0.5s ease-in;
 }
 
 .nav-menu-container {
@@ -445,6 +453,14 @@ nav {
   }
   to {
     transform: translateY(0);
+  }
+}
+@keyframes slide-up-more {
+  from {
+    transform: translateY(0);
+  }
+  to {
+    transform: translateY(-60%);
   }
 }
 .hero {
