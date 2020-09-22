@@ -597,20 +597,10 @@ nav {
     display: flex;
   }
 }
-@media (min-width: 769px) and (max-width: 1920px) {
-  .carousel {
-    height: calc(83vh);
-  }
-}
 
 .carousel-btn-container {
   justify-content: center;
   display: flex;
-}
-@media (min-width: 769px) and (max-width: 1920px) {
-  .carousel-btn-container {
-    margin-top: -17vh;
-  }
 }
 @media (min-width: 1280px) and (max-width: 1920px) {
   .carousel-btn-container {
@@ -722,13 +712,13 @@ nav {
   text-transform: uppercase;
   font-size: calc(20px + 2.1vw);
 }
-@media (min-width: 360px) and (max-width: 768px) {
+@media (min-width: 360px) and (max-width: 1279px) {
   .carousel-cell h3 {
     width: 100%;
     height: 100%;
   }
 }
-@media (min-width: 1280px) and (max-width: 1920px) {
+@media (min-width: 1280px) {
   .carousel-cell h3 {
     right: 0;
     bottom: 4rem;
