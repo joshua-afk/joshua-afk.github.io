@@ -629,7 +629,7 @@ nav {
 .carousel-prev {
   margin-left: 0rem;
 }
-@media (min-width: 768px) and (max-width: 1920px) {
+@media (min-width: 1280px) {
   .carousel-prev {
     margin-left: 3.5rem;
   }
@@ -638,7 +638,7 @@ nav {
 .carousel-next {
   margin-right: 0rem;
 }
-@media (min-width: 768px) and (max-width: 1920px) {
+@media (min-width: 1280px) {
   .carousel-next {
     margin-right: 3.5rem;
   }
