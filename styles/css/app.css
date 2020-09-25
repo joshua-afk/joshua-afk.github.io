@@ -143,12 +143,15 @@ html {
   -ms-overflow-style: none;
   overflow-y: scroll;
   overflow-x: hidden;
+  height: -webkit-fill-available;
 }
 
 body {
+  min-height: 100vh;
+  min-height: -webkit-fill-available;
   font-family: "Blinker", sans-serif;
-  color: #ffffff;
   position: relative;
+  color: #ffffff;
   background-color: #101010;
 }
 
