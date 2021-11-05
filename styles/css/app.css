@@ -127,7 +127,7 @@
   opacity: 1;
 }
 
-.work-title a:hover, .carousel-cell h3 a:hover {
+.carousel-cell h3 a:hover {
   -webkit-text-stroke: 1px #eeeeee;
   -webkit-text-fill-color: transparent;
 }
@@ -1029,8 +1029,12 @@ nav {
 
 .work-left-variant {
   position: relative;
-  padding-right: 2rem;
   margin-bottom: 4rem;
+}
+@media (min-width: 1280px) {
+  .work-left-variant {
+    padding-right: 2rem;
+  }
 }
 @media (min-width: 1280px) {
   .work-left-variant header {
@@ -1056,8 +1060,12 @@ nav {
 
 .work-right-variant {
   position: relative;
-  padding-left: 2rem;
   margin-bottom: 4rem;
+}
+@media (min-width: 1280px) {
+  .work-right-variant {
+    padding-left: 2rem;
+  }
 }
 @media (min-width: 1280px) {
   .work-right-variant header {
@@ -1099,6 +1107,7 @@ nav {
     font-weight: 700;
   }
 }
+
 .work-year {
   color: #8c8c8c;
   font-size: 1rem;
