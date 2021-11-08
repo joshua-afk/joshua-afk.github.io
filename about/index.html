@@ -109,7 +109,7 @@
 
           <!-- month -->
           <footer class="about-hero-date-container">
-            <span class="about-hero-date">09</span>
+            <span class="about-hero-date" id="current-month">09</span>
           </footer>
         </div>
       </div>
@@ -126,22 +126,28 @@
   <section id="about-who" class="section-wrapper">
     <h3 class="section-header">Who is this dude?</h3>
 
+    <p id="date"></p>
+
     <p class="section-text">Joshua-AFK is a web developer, designer, vimmer, typist, and a mortal. He is packed with knowledge in dev-ops technologies, back-end technologies, and many resource and reference for front-end stacks.</p>
 
     <div class="sep-1"></div>
 
-    <p class="section-text">I use HTML, CSS and Javascript. Though constantly changing, my focus right now is Django, Laravel, React.js and Node.</p>
+    <p class="section-text">I use HTML, CSS and Javascript. Though constantly changing, my focus right now is Laravel and React.js.</p>
   </section>
 
   <section id="about-who" class="section-wrapper">
     <h3 class="section-header">A Little More!</h3>
 
-    <p class="section-text">I love coffee and keyboard. I am also obsessed at my vim, tmux, and zsh configs.</p>
+    <p class="section-text">I love coffee and keyboard. I am also geeky with my vim, tmux, and zsh configs. I constantly change them!</p>
   </section>
 
   <!-- scripts -->
   <script src="../scripts/app.js"></script>
   <script src="../scripts/nav-veggie.js"></script>
   <script src="../scripts/scrollbar.js"></script>
+  <script>
+    date = new Date();
+    document.getElementById("current-month").innerHTML = date.getMonth();
+  </script>
 </body>
 </html>
