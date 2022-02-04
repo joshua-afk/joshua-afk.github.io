@@ -1,0 +1,39 @@
+::-webkit-scrollbar {
+  width: 0;
+}
+
+#progress_body {
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 0.4rem;
+  background: $white;
+  border-radius: 0 0 1px 1px;
+
+  &:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: $white;
+  }
+
+  &:after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: $white;
+  }
+}
+
+#progress_path {
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: .5rem;
+  height: 100%;
+  background: transparent;
+}

@@ -1,0 +1,18 @@
+@mixin font-face-ttf($family, $path, $weight, $style){
+	@font-face{
+		font-family: $family;
+		src: url('#{$path}.ttf') format('truetype');
+		font-weight: $weight;
+		font-style: $style;
+		font-display: swap;
+	}
+}
+
+@mixin font-face-otf($family, $path, $weight, $style){
+	@font-face{
+		font-family: $family;
+		src: url('#{$path}.otf');
+		font-weight: $weight;
+		font-style: $style;
+	}
+}

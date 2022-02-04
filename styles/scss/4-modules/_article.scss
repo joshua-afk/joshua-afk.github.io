@@ -1,0 +1,8 @@
+.article-container {
+  padding: 3rem 2rem;
+
+
+  @include media('>desktop-small') {
+    padding: 3rem 8rem;
+  }
+}

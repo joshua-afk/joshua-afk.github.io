@@ -1,0 +1,40 @@
+@import '0-plugins/plugins';
+@import '1-helpers/helpers';
+@import '2-base/base';
+@import '3-layouts/layouts';
+@import '4-modules/modules';
+@import '5-templates/templates';
+
+.container {
+  @extend %container;
+}
+
+.sep-1 {
+  height: 1rem;
+}
+
+.sep-2 {
+  height: 2rem;
+}
+
+// #about-who {
+//   .section-header {
+//     text-align: center;
+
+//     @include media('>=desktop-small') {
+//       text-align: left;
+//       margin: 0 8rem 2rem;
+//       max-width: 1920px;
+//     }
+//   }
+
+//   .section-text {
+//     text-align: center;
+
+//     @include media('>=desktop-small') {
+//       text-align: left;
+//       margin: 0 8rem;
+//       max-width: 1920px;
+//     }
+//   }
+// }

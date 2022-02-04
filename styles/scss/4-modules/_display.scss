@@ -1,0 +1,30 @@
+.d-none { display: none; }
+.d-flex { display: flex; }
+.d-block { display: block; }
+.d-initial { display: initial; }
+
+.d-sm-none { display: none; }
+.d-sm-flex { display: flex; }
+.d-sm-block { display: block; }
+.d-sm-initial { display: initial; }
+
+@include media('>phone-small', '<tablet') {
+  .d-sm-none { display: none; }
+  .d-sm-flex { display: flex; }
+  .d-sm-block { display: block; }
+  .d-sm-initial { display: initial; }
+}
+
+@include media('>=tablet', '<desktop-small') {
+  .d-md-none { display: none; }
+  .d-md-flex { display: flex; }
+  .d-md-block { display: block; }
+  .d-md-initial { display: initial; }
+}
+
+@include media('>=desktop-small') {
+  .d-lg-none { display: none; }
+  .d-lg-flex { display: flex; }
+  .d-lg-block { display: block; }
+  .d-lg-initial { display: initial; }
+}

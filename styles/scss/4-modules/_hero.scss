@@ -1,0 +1,29 @@
+.hero {
+  height: calc(100vh - 5rem);
+}
+
+.hero-arrow-container {
+  text-align: center;
+  position: absolute;
+
+  @include media('<desktop-small') {
+    left: 0;
+    right: 0;
+    top: 80vh;
+  }
+
+  @include media('>=desktop-small') {
+    top: 85vh;
+    right: 4vw;
+  }
+}
+
+.hero-arrow {
+  font-size: 58px;
+
+  svg {
+    fill: $cod-gray;
+    stroke: $suva-gray;
+    stroke-width: 1px;
+  }
+}

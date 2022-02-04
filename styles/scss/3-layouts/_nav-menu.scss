@@ -1,0 +1,163 @@
+.nav-menu {
+  position: absolute;
+  width: 100%;
+  top: 0;
+  left: 0;
+  background-color: $cod-gray;
+  overflow: hidden;
+  transition: opacity 0.5s ease-in-out;
+
+  &.show{
+    z-index: 10;
+    height: 100vh;
+    opacity: 1;
+  }
+
+  &.hide {
+    z-index: -1;
+    height: 0;
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out, height 3s ease-in, z-index 0.5s ease-in;
+  }
+}
+
+.nav-menu-container {
+  position: relative;
+  top: 25vh;
+  display: flex;
+  flex-direction: column;
+  @extend %container;
+
+  @include media(">=desktop-small") {
+    flex-direction: row;
+    margin: 0 10rem;
+  }
+}
+
+.nav-menu-page-links {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  text-align: right;
+  overflow: hidden;
+  margin-bottom: 2.5rem;
+
+  @include media(">=desktop-small") {
+    order: 2;
+    margin-bottom: 0;
+    line-height: 1;
+  }
+}
+
+.nav-menu-page-link {
+  transition: 0.5s;
+
+  &.slide-in-one {
+    animation-name: slide-left;
+    animation-duration: 0.6s;
+  }
+
+  &.slide-in-two {
+    animation-name: slide-left;
+    animation-duration: 0.8s;
+  }
+}
+
+.nav-menu-page-link a {
+  text-decoration: none;
+  text-transform: uppercase;
+  font-family: $montserrat;
+  font-size: $like-h2;
+  font-weight: $extra-bold;
+  @extend %slide-horizontal-hover;
+}
+
+.nav-menu-info {
+  width: 100%;
+
+  @include media(">=desktop-small") {
+    display: flex;
+    align-items: flex-end;
+    order: 1;
+    flex: 1;
+  }
+}
+
+.nav-menu-info-wrapper {
+  font-family: $blinker;
+  display: inline-block;
+  overflow: hidden;
+
+  a {
+    display: block;
+    line-height: 1.5rem;
+    text-decoration: none;
+    outline: none;
+    color: transparent;
+    @extend %slide-horizontal-hover-white;
+
+    @include media(">=desktop-small") {
+      line-height: 1.5;
+      font-size: 22px;
+      font-weight: $semi-bold;
+    }
+
+    &.slide-in-one {
+      animation-name: slide-right;
+      animation-duration: 0.6s;
+    }
+
+    &.slide-in-two {
+      animation-name: slide-right;
+      animation-duration: 0.8s;
+    }
+  }
+}
+
+.nav-menu-footer {
+  @extend %container;
+  display: flex;
+  position: absolute;
+  bottom: 2.5rem;
+  left: 0;
+  right: 0;
+  overflow: hidden;
+
+  @include media(">=tablet") {
+    bottom: 8.5vh;
+    margin: 0 3.5rem;
+  }
+
+  .nav-menu-social-links {
+    flex: 1;
+
+    a {
+      @extend %link;
+      margin-right: 1rem;
+
+      svg {
+        fill: $white;
+
+        &.transition-in {
+          animation-name: slide-up;
+          animation-duration: 0.6s;
+        }
+      }
+    }
+  }
+
+  span {
+    text-transform: uppercase;
+    font-family: $blinker;
+    font-size: 0.812rem;
+    font-weight: $bold;
+    letter-spacing: 2px;
+    color: $suva-gray;
+    text-align: right;
+
+    &.transition-in {
+      animation-name: slide-up;
+      animation-duration: 0.6s;
+    }
+  }
+}

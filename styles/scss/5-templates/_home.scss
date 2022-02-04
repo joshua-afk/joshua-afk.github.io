@@ -1,0 +1,133 @@
+.carousel {
+  height: calc(100vh - 5rem);
+  position: relative;
+  z-index: 1;
+
+  @include media('>=desktop-small', '<=desktop-large') {
+    display: flex;
+  }
+}
+
+.carousel-btn-container {
+  justify-content: center;
+  display: flex;
+
+  @include media('>=desktop-small', '<=desktop-large') {
+    justify-content: center;
+    flex-direction: column;
+  }
+}
+
+.carousel-btn {
+  font-family: "Montserrat", sans-serif;
+  text-decoration: none;
+  font-size: 35px;
+  font-weight: 800;
+
+  @include media('>=desktop-small', '<=desktop-large') {
+    font-size: 58px;
+
+    svg {
+      fill: $cod-gray;
+      stroke: $suva-gray;
+      stroke-width: 1px;
+    }
+  }
+}
+
+.carousel-prev {
+  margin-left: 0rem;
+
+  @include media('>=desktop-small') {
+    margin-left: 3.5rem;
+  }
+}
+
+.carousel-next {
+  margin-right: 0rem;
+
+  @include media('>=desktop-small') {
+    margin-right: 3.5rem;
+  }
+}
+
+@supports (-webkit-text-stroke: 1px $suva-gray) {
+  .carousel-btn {
+    -webkit-text-stroke: 1px $suva-gray;
+    -webkit-text-fill-color: $cod-gray;
+  }
+}
+
+.carousel-projects {
+  margin: 1rem auto;
+
+  @include media('>=phone-small', '<phone') {
+    margin: 0.5rem auto;
+  }
+
+  @include media('>=desktop-small', '<=desktop-large') {
+    width: 70%;
+    margin: 1rem auto;
+  }
+}
+
+// flickity
+.carousel-cell {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  height: 68vh;
+  position: relative;
+
+  @include media('>=0', '<=phone-large') {
+    width: 375px;
+    height: 68vh;
+  }
+
+  @include media('>phone-large', '<=desktop-small') {
+    width: 100%; 
+    height: 75vh;
+  }
+
+  @include media('>=desktop-small', '<=desktop-large') {
+    width: 100%; 
+  }
+
+  img {
+    z-index: 10;
+    position: relative;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+
+    @include media('>=tablet', '<=desktop-large') {
+      width: 85%; 
+    }
+  }
+
+  h3 {
+    z-index: 20;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    text-align: center;
+    align-items: center;
+    text-transform: uppercase;
+    font-size: $like-h3;
+
+    @include media('>=phone-small', '<desktop-small') {
+      width: 100%;
+      height: 100%;
+    }
+
+    @include media('>=desktop-small') {
+      right: 0;
+      bottom: 4rem;
+    }
+
+    a:hover {
+      @extend %project-link-hover;
+    }
+  }
+}

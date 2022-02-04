@@ -1,0 +1,116 @@
+/*==ABOUT-HERO==*/
+.about-hero-wrapper {
+  position: absolute;
+  right: 1.5rem;
+
+  @include media('>=phone-large') {
+    position: relative;
+    display: flex;
+    right: -1rem;
+  }
+}
+
+.about-hero-container {
+  position: absolute;
+  top: 20vh;
+  left: 0;
+  right: 0;
+  display: flex;
+  justify-content: center;
+
+  @include media('>=desktop-small') {
+    top: 16vh;
+  }
+}
+
+.about-hero-circle {
+  height: calc(16rem + 10vw);
+  width: calc(16rem + 10vw);
+  border: 1px solid #8c8c8c;
+  border-radius: 50%;
+  display: flex;
+
+  @include media('>=phone-large') {
+    height: calc(16rem + 17vw);
+    width: calc(16rem + 17vw);
+  }
+
+  @include media('>=tablet') {
+    height: calc(16rem + 20vw);
+    width: calc(16rem + 20vw);
+  }
+}
+
+.about-hero-header-wrapper {
+  position: relative;
+  top: 9vh;
+  left: -1.5rem;
+
+  @include media('>=phone') {
+    left: -2.3rem;
+  }
+
+  @include media('>=desktop-small') {
+    left: calc(-4rem + -15vw);
+    top: 16vh;
+  }
+}
+
+.about-hero-header-container {
+  background-color: $cod-gray;
+  font-family: $montserrat;
+  border-top: .8rem solid $cod-gray;
+  border-bottom: .8rem solid $cod-gray;
+  border-top-right-radius: 18%;
+
+  h2 {
+    font-size: calc(22px + 4vw);
+    margin-bottom: 0.6rem;
+
+    @include media('>=phone-large') {
+      font-size: calc(21px + 4vw);
+    }
+
+    @include media('>=desktop-small') {
+        width: 110%;
+    }
+
+    @include media('>=desktop-large') {
+        width: 130%;
+    }
+  }
+
+  p {
+    font-size: $like-h4;
+    font-weight: $bold;
+    margin-bottom: 0.6rem;
+
+    @include media('>=desktop-small') {
+        width: 130%;
+    }
+
+    @include media('>=desktop-large') {
+        width: 150%;
+    }
+  }
+
+  span {
+    font-size: $like-h4;
+    font-weight: $bold;
+    @extend %stroke;
+  }
+}
+
+.about-hero-date-container {
+  position: absolute;
+  bottom: 10%;
+  left: 81%;
+}
+
+.about-hero-date {
+  background-color: $cod-gray;
+  font-family: $montserrat;
+  font-size: $like-h3;
+  font-weight: $bold;
+  @extend %stroke;
+}

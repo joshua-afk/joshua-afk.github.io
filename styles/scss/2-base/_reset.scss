@@ -1,0 +1,50 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+::selection {
+  background-color: $grey;
+  color: $white;
+}
+
+html {
+  scroll-behavior: smooth;
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+  overflow-y: scroll;
+  overflow-x: hidden;
+  height: -webkit-fill-available;
+}
+
+body {
+  min-height: 100vh;
+  min-height: -webkit-fill-available;
+  font-family: 'Blinker', sans-serif;
+  position: relative;
+  color: $white;
+  background-color: $cod-gray;
+}
+
+section {
+  display: block;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  @extend %link;
+
+  &:active {
+    outline: none;
+  }
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: $extra-bold;
+    line-height: 0.9;
+    text-transform: uppercase;
+}

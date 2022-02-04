@@ -1,0 +1,35 @@
+.section-header {
+  margin-bottom: 2rem;
+  font-size: $like-h3;
+  line-height: 1.2;
+
+  @include media('>=desktop-small') {
+    font-size: $like-h3-max;
+  }
+}
+
+.section-container, .article-container {
+  padding: 3rem 0;
+}
+
+.section-wrapper, .article-wrapper {
+  margin: 0 2rem;
+
+  @include media('>=desktop-small') {
+    margin: 0 8rem;
+  }
+
+  p {
+    margin-top: 1.5rem;
+    font-size: $regular-text;
+    line-height: $regular-text-lineheight;
+
+    @include media('>=desktop-small') {
+      max-width: 1920px;
+      font-size: $regular-text-max;
+    }
+  }
+}
+
+
+

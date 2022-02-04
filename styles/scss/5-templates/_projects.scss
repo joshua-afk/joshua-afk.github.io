@@ -1,0 +1,100 @@
+.project-breadcrumb-container {
+  z-index: 1;
+  height: initial;
+  margin: 3rem 0;
+}
+
+.project-breadcrumb-wrapper {
+  display: flex;
+  margin: 0 auto;
+}
+
+.project-breadcrumb-item {
+    text-transform: uppercase;
+    text-indent: 0.5rem;
+
+    a {
+    marigin-right: 1rem;
+    }
+
+    &::after{
+        content: "\00a0\00a0\00a0 /";
+    }
+
+    &:nth-child(3)::after{
+        content: "";
+    }
+
+    &.current {
+        color: $grey;
+    }
+}
+
+.project-header {
+  @extend %container;
+  margin-bottom: 3.5rem;
+
+  @include media('>=desktop-small', '<=desktop-large') {
+    margin-bottom: 5rem;
+  }
+}
+
+.project-title {
+  text-align: center;
+  font-size: $like-h2;
+  margin-bottom: 2rem;
+}
+
+.project-excerpt {
+  text-align: center;
+  font-size: $regular-text;
+
+  @include media('>=desktop-small', '<=desktop-large') {
+    font-size: $regular-text-max;
+  }
+}
+
+.project-image-container {
+  @extend %container;
+}
+
+.project-image {
+  width: 100%;
+}
+
+.project-footer {
+  @extend %container;
+  margin-top: 3rem;
+  margin-bottom: 3rem;
+}
+
+.project-flair {
+    padding: 0.3rem 0.4rem;
+    margin-right: 0.5rem;
+    border: 1px solid $suva-gray;
+    border-radius: 0.4rem;
+    font-size: 13px;
+    font-weight: $semi-bold;
+}
+
+.project-flairs-container {
+  line-height: 2.3;
+  text-align: center;
+}
+
+.project-links-container {
+  margin-top: 1.5rem;
+  text-align: center;
+}
+
+.project-links-item {
+  @extend %project-links-item;
+  text-transform: uppercase;
+
+  &.disabled {
+    text-decoration: line-through;
+    text-decoration-color: $coral;
+    text-decoration-thickness: 2px;
+    cursor: text;
+  }
+}

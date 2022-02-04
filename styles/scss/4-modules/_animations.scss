@@ -1,0 +1,19 @@
+@keyframes slide-left {
+  from { transform: translateX(55%); }
+  to { transform: translateX(0); }
+}
+
+@keyframes slide-right {
+  from { transform: translateX(-55%); }
+  to { transform: translateX(0); }
+}
+
+@keyframes slide-up {
+  from { transform: translateY(100%); }
+  to { transform: translateY(0); }
+}
+
+@keyframes slide-up-more {
+  from { transform: translateY(0); }
+  to { transform: translateY(-60%); }
+}
